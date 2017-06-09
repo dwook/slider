@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+    <!-- 룩북 CSS 시작  -->
+    <link rel="stylesheet" type="text/css" href="lookbook.css" />
+    <!-- 룩북 CSS 끝  -->
+    <!-- 룩북스크립트 시작    -->
+    <script>
+/*********************************************************************************
+플러그인 : jquery.DB_bgSlideGallery.js
+제작자 : 디자인블랙 , http://designblack.com
+업데이트 : 2014-11-18
+라이센스 : 도메인라이센스
+참고 : 문서정보는 삭제 할 수 없습니다.
+*********************************************************************************/
+!function(i){i.fn.DB_bgSlideGallery=function(t){var n={key:"",thumSpeed:.15,xPadding:100,thumFadeOutTime:3e3,thumFadeSpeed:1e3,thumOpacity:.5,imgFadeSpeed:800,thumDisplay:!1,autoRolling:0,autoRollingTime:1e4};return i.extend(n,t),this.each(function(){function t(){e(),a(),setInterval(o,30),setTimeout(u,n.thumFadeOutTime),d(),i(window).resize(function(){d()})}function e(){var i=r.outerWidth();m=i*v+2*n.xPadding,l.css("width",m),r.eq(0).css("margin-left",n.xPadding),r.eq(0).addClass("on");var t=f.find("img");t.load(function(){t.css("margin-left",-Math.round((t.width()-s.width())/2))}),n.autoRolling&&h()}function d(){var i=f.find("img");i.width(s.width()),i.height(""),i.height()
+<s.height()&&(i.height(s.height()),i.width( "")),i.css( "margin-left",-Math.round((i.width()-s.width())/2))}function a(){s.bind( "mousemove",function(i){var t=s.width();y=i.clientX*(m-t)/t*-1,w=0}),l.bind( "mouseenter",function(){F=!0,u()}).bind( "mouseleave",function(){F=!1,u()}),r.bind( "click",function(){S!=i(this).index()&&(S=i(this).index(),c())}).bind( "mouseenter",function(){i(this).find( ">img").stop(!0,!0).animate({opacity:n.thumOpacity},300)}).bind( "mouseleave",function(){i(this).find( ">img").stop(!0,!0).animate({opacity:1},300)}),g.bind( "click",function(){v-1>S&&(S++,c())}).bind("mouseenter",function(){F=!0}).bind("mouseleave",function(){F=!1}),p.bind("click",function(){S>0&&(S--,c())}).bind("mouseenter",function(){F=!0}).bind("mouseleave",function(){F=!1})}function o(){w++
+    <50&&(b+=Math.round(n.thumSpeed*(y-b)),l.css({left:b}))}function u(){1==n.thumDisplay?l.show():F?(l.stop().animate({opacity:1},n.thumFadeSpeed),r.stop().animate({opacity:1},n.thumFadeSpeed)):(l.stop().animate({opacity:0},n.thumFadeSpeed),r.stop().animate({opacity:0},n.thumFadeSpeed))}function c(){var i=r.eq(S).find( "img").attr( "data-org"),t=f.find( "img");t.attr( "src",i).hide(),t.fadeIn(n.imgFadeSpeed),r.removeClass( "on"),r.eq(S).addClass( "on")}function h(){x=setInterval(function(){F||(v-1>S?(S++,c()):(S=0,c()))},n.autoRollingTime)}var m,s=i(this),f=s.find(".DB_org"),l=s.find(".DB_thum"),r=l.find(">li"),g=s.find(".DB_next"),p=s.find(".DB_prev"),v=r.length,b=0,y=0,w=0,S=0,F=!1,x=0;t()})}}(jQuery); 
+
+$('.lookbook').DB_bgSlideGallery({
+    thumSpeed:0.3,              //이동속도
+    xPadding:100,               //좌우여백
+    thumFadeOutTime:3000,       //시작시 썸네일이 없어지는 딜레이시간
+    thumFadeSpeed:1000,         //썸네일 fade스피드
+    thumOpacity:0.5,
+    imgFadeSpeed:1000,           //이미지 fade스피드          
+    thumDisplay:0,              //썸네일보이기(1,0)
+    autoRolling:1,              //오토롤링(1,0)
+    autoRollingTime:5000        //오토롤링시간
+});
+
+    </script>
+    <!-- 룩북스크립트 끝    -->
+
+    
+    
+    
+
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css"/>
+    
+
+<link rel="canonical" href="http://andar.co.kr/_wg/import/lookbook.html" />
+<link rel="alternate" href="http://m.andar.co.kr/_wg/import/lookbook.html" />
+<link rel="shortcut icon" href="../../web/upload/favicon_20150819224531.ico" />
+
+
+<script type="text/javascript">var EC_SDE_SHOP_NUM = 1;var SHOP = {getLanguage : function() { return "ko_KR"; },getCurrency : function() { return "KRW"; },getFlagCode : function() { return "KR"; },isMultiShop : function() { return true; },isDefaultShop : function() { return true; },getProductVer : function() { return 2; },isSDE : function() { return true; }};var EC_COMMON_UTIL = {convertSslForString : function(sString) { return sString.replace(/http:/gi, '');},convertSslForHtml : function(sHtml) { return sHtml.replace(/((?:src|href)\s*=\s*['"])http:(\/\/(?:[a-z0-9\-_\.]+)\/)/ig, '$1$2');},getProtocol : function() { return 'http'; },moveSsl : function() { if (EC_COMMON_UTIL.getProtocol() === 'http') { var oLocation = jQuery(window.location); var sUrl = 'https://' + oLocation.attr('host') + oLocation.attr('pathname') + oLocation.attr('search'); window.location.replace(sUrl); } }};</script>
+
+
+
+<title>fieberlogie</title>
+<meta name="path_role" content="ETC" />
+<meta name="description" content="백화점입점, 당신의 모든 순간을 특별하게 만들어 줄 특별한 액티브웨어" />
+<meta name="keywords" content="요가,필라테스,피트니스,휘트니스,운동,러닝,런닝,요가복장,요가복,요가옷,필라테스복장,필라테스복,필라테스옷,피트니스복장,피트니스복,피트니스옷,휘트니스복장,휘트니스복,휘트니스옷,운동복,운동복장,트레이닝복,트레이닝,러닝복,런닝복,요가복추천,필라테스복추천,피트니스복추천,휘트니스복추천,운동복추천,러닝복추천,트레이닝복추천,명품요가복,명품필라테스복,명품피트니스복,명품러닝복,예쁜요가복,예쁜필라테스복,예쁜피트니스복,예쁜운동복,예쁜,휘트니스복,예쁜러닝복,예쁜운동복,예쁜트레이닝복,여자요가복,여자필라테스복,여자피트니스복,여자휘트니스복,여자운동복,여성요가복,여성운동복,여성피트니스복" /></head>
+<body id="main">    
+    <!-- 홈으로 -->
+<!--
+    <div class="lookbook_home">
+        <a href="../../index.html"><img src="../img/gohome.gif" alt="홈으로" /></a>
+    </div>
+-->
+    <!-- //홈으로 -->
+    
+    
+
+<!--------------------------------------------------------------------------------------------------------------------------------------
+
+     === LOOKBOOK ===
+
+     • 디자인 수정전 반드시 백업을 해놓고 작업하시기 바랍니다.
+     • <li><img src="작은이미지경로" data-org="큰이미지경로" alt=""><a href="링크주소">VIEW</a></li>
+
+--------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+<div class="lookbook">
+
+    <!-- 해당 부분만 수정하시기 바랍니다. -->
+    <!-- 대표 이미지 -->
+    <div class="DB_org"><img src="img/lookbook/d01.jpg"/></div>
+    
+    <!-- 리스트 이미지 -->
+    <ul class="DB_thum">
+        <li><img src="img/lookbook/ds01.jpg" data-org="img/lookbook/d01.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds02.jpg" data-org="img/lookbook/d02.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds03.jpg" data-org="img/lookbook/d03.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds04.jpg" data-org="img/lookbook/d04.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds05.jpg" data-org="img/lookbook/d05.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds06.jpg" data-org="img/lookbook/d06.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds07.jpg" data-org="img/lookbook/d07.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds08.jpg" data-org="img/lookbook/d08.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds09.jpg" data-org="img/lookbook/d09.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds10.jpg" data-org="img/lookbook/d10.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds11.jpg" data-org="img/lookbook/d11.jpg" alt=""></li>
+        <li><img src="img/lookbook/ds12.jpg" data-org="img/lookbook/d12.jpg" alt=""></li>
+	</ul>
+    <!-- //해당 부분만 수정하시기 바랍니다. -->
+    
+    <!-- 버튼 -->
+    <span class="DB_prev"><img src="img/lookbook/prev.png" onmouseover="this.src='img/lookbook/prev_on.png'" onmouseout="this.src='img/lookbook/prev.png'" alt="prev"></span>
+    <span class="DB_next"><img src="img/lookbook/next.png" onmouseover="this.src='img/lookbook/next_on.png'" onmouseout="this.src='img/lookbook/next.png'" alt="next"></span>
+</div>
+    
+
+
+<!-- External Script End -->
+
+<script type="text/javascript" src="optimizer.js"></script>
+</body>
+</html>
